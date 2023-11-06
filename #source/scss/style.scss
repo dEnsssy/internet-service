@@ -1,2 +1,328 @@
+// Reset Styles
 @import "nullstyle.scss";
 
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.container {
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+// Main Page Styles
+body {
+    font-family: Montserrat;
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 54px;
+    & a {
+        color: #000;
+        font-size: 20px;
+    }
+    &__nav {
+        display: flex;
+        gap: 100px;
+    }
+}
+.active-page {
+    font-weight: 700;
+}
+
+.preview {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 50px;
+    &__text {
+        border-radius: 30px;
+        background: #f5f5f5;
+        padding: 196px 94px 206px 34px;
+    }
+    &__text h1 {
+        color: #000;
+        font-size: 80px;
+        font-weight: 700;
+        margin-bottom: 42px;
+        line-height: 97.52px;
+    }
+    &__text-cards {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 50px;
+        line-height: 24.38px;
+    }
+    &__text-cards-info1 {
+        padding: 12px 19px 13px 19px;
+        font-size: 20px;
+        width: 285px;
+        height: 140px;
+        border-radius: 15px;
+        background: #e9ebf1;
+    }
+    &__text-cards-info2 {
+        padding: 12px 19px 13px 19px;
+        font-size: 20px;
+        width: 285px;
+        height: 140px;
+        border-radius: 15px;
+        background: #e9ebf1;
+    }
+    &__text-cards-info3 {
+        padding: 12px 19px 13px 19px;
+        font-size: 20px;
+        width: 285px;
+        height: 140px;
+        border-radius: 15px;
+        background: #e9ebf1;
+    }
+    &__text-btn {
+        display: flex;
+        width: 411px;
+        height: 64px;
+        padding: 20px 112px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        background: #000;
+        color: #fff;
+        font-size: 20px;
+    }
+}
+
+.information {
+    height: 894px;
+    background: url("/img/mane-page/info-bg.png");
+    position: relative;
+    margin-bottom: 81px;
+    &__text {
+        position: absolute;
+        top: 215px;
+        left: 35px;
+        width: 1024px;
+        height: 463px;
+        border-radius: 30px;
+        background: rgba(245, 245, 245, 0.3);
+        backdrop-filter: blur(5px);
+        line-height: 48.76px;
+    }
+    &__text h1 {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        padding: 44px 59px 0px 29px;
+    }
+    &__text p {
+        color: #fff;
+        font-size: 40px;
+        padding: 0px 30px 56px 19px;
+    }
+}
+
+.info-cards {
+    display: flex;
+    gap: 22px;
+    text-align: center;
+    margin-bottom: 82px;
+    & h1 {
+        font-size: 125px;
+        color: white;
+        -webkit-text-stroke: 2px black;
+        transition: all 0.2s;
+    }
+    & p {
+        color: #000;
+        font-size: 40px;
+        max-width: 497px;
+        margin: 0 auto;
+        transition: all 0.2s;
+    }
+    &__info1 {
+        padding-top: 60px;
+        width: 559px;
+        height: 328px;
+        border-radius: 15px;
+        background: #e9ebf1;
+        transition: all 0.2s;
+    }
+    &__info2 {
+        padding-top: 60px;
+        width: 559px;
+        height: 328px;
+        border-radius: 15px;
+        background: #e9ebf1;
+        transition: all 0.2s;
+    }
+    &__info3 {
+        padding-top: 60px;
+        width: 559px;
+        height: 328px;
+        border-radius: 15px;
+        background: #e9ebf1;
+        transition: all 0.2s;
+    }
+    &__info1:hover,
+    &__info2:hover,
+    &__info3:hover {
+        background: #000;
+        transform: translate(0px, -2px);
+    }
+    &__info1:hover h1,
+    &__info2:hover h1,
+    &__info3:hover h1 {
+        color: black;
+        -webkit-text-stroke: 2px white;
+    }
+    &__info1:hover p,
+    &__info2:hover p,
+    &__info3:hover p {
+        color: white;
+    }
+}
+
+.services {
+    margin-bottom: 125px;
+    & h1 {
+        color: #000;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 100px;
+    }
+    &__cards {
+        display: flex;
+        gap: 30px;
+    }
+    &__cards h2 {
+        padding-top: 367px;
+        padding-left: 31px;
+        color: #fff;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48.76px;
+    }
+    &__cards p {
+        padding-left: 31px;
+        color: #fff;
+        font-size: 40px;
+        line-height: 48.76px;
+    }
+    &__cards-info1 {
+        width: 406px;
+        height: 545px;
+        border-radius: 15px;
+        background: url("/img/mane-page/services-cards-bg.png");
+    }
+    &__cards-info2 {
+        width: 406px;
+        height: 545px;
+        border-radius: 15px;
+        background: url("/img/mane-page/services-cards-bg.png");
+    }
+    &__cards-info3 {
+        width: 406px;
+        height: 545px;
+        border-radius: 15px;
+        background: url("/img/mane-page/services-cards-bg.png");
+    }
+    &__cards-info4 {
+        width: 406px;
+        height: 545px;
+        border-radius: 15px;
+        background: url("/img/mane-page/services-cards-bg.png");
+    }
+}
+
+.contacts {
+    height: 597px;
+    border-radius: 30px;
+    background: url("/img/mane-page/contacts-bg.png");
+    padding-left: 56px;
+    margin-bottom: 50px;
+    & h1 {
+        padding-top: 115px;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    & h2 {
+        color: #c1c1c1;
+        font-weight: 700;
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    & p {
+        font-size: 30px;
+        margin-bottom: 30px;
+        max-width: 476px;
+        line-height: 36.57px;
+    }
+    & p:nth-child(5) {
+        max-width: 283px;
+    }
+}
+
+.footer {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 50px;
+    &__left {
+        border-radius: 30px;
+        background: #000;
+        padding: 100px 136px 232px 35px;
+    }
+    &__left h3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 282px;
+        height: 107px;
+        background: white;
+        margin-bottom: 141px;
+    }
+    &__left a {
+        color: #000;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    &__left p {
+        color: #fff;
+        font-size: 30px;
+    }
+    &__right {
+        padding: 75px 79px 145px 137px;
+        width: 1024px;
+        height: 617px;
+        border-radius: 30px;
+        background: #d9d9d9;
+        display: flex;
+        gap: 244px;
+    }
+    &__right h1 {
+        color: #000;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+    &__right a {
+        color: #000;
+        font-size: 30px;
+    }
+    &__right-list1-links {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    &__right-list2-links {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+}
